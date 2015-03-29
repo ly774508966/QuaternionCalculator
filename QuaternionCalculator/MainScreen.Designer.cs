@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.githubLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
@@ -181,9 +181,9 @@
             // 
             // ActionDescription
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActionDescription.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActionDescription.DefaultCellStyle = dataGridViewCellStyle1;
             this.ActionDescription.FillWeight = 60F;
             this.ActionDescription.HeaderText = "Action";
             this.ActionDescription.MinimumWidth = 150;
@@ -268,17 +268,17 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "3.";
             // 
-            // label4
+            // githubLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(396, 150);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(237, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "https://github.com/Atropin/QuaternionCalculator";
-            this.label4.Click += new System.EventHandler(this.OnGitLinkClick);
-            this.label4.MouseEnter += new System.EventHandler(this.OnGitLinkMouseEnter);
-            this.label4.MouseLeave += new System.EventHandler(this.OnGitLinkMouseLeave);
+            this.githubLabel.AutoSize = true;
+            this.githubLabel.Location = new System.Drawing.Point(352, 150);
+            this.githubLabel.Name = "githubLabel";
+            this.githubLabel.Size = new System.Drawing.Size(281, 13);
+            this.githubLabel.TabIndex = 27;
+            this.githubLabel.Text = "https://github.com/Atropin/QuaternionCalculator/releases";
+            this.githubLabel.Click += new System.EventHandler(this.OnGitLinkClick);
+            this.githubLabel.MouseEnter += new System.EventHandler(this.OnGitLinkMouseEnter);
+            this.githubLabel.MouseLeave += new System.EventHandler(this.OnGitLinkMouseLeave);
             // 
             // label5
             // 
@@ -295,7 +295,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 172);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.githubLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -348,7 +348,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label githubLabel;
         private System.Windows.Forms.Label label5;
     }
 }

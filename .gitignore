@@ -12,6 +12,10 @@ obj
 # Resharper #
 #############
 _Resharper*
+
+# User files #
+##############
+*.suo
 *.user
  
 # Packages #

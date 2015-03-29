@@ -6,6 +6,7 @@ namespace QuaternionCalculator
 {
     public partial class MainScreen : Form
     {
+        private const string GithubUrl = "https://github.com/Atropin/QuaternionCalculator/releases";
         private readonly ViewModel _vm = new ViewModel();
         private HintForm _hintForm;
         
@@ -16,6 +17,8 @@ namespace QuaternionCalculator
             InitializeGrid();
 
             InitializeTooltip();
+
+            InitializeUrl();
         }
 
         private void InitializeGrid()
@@ -34,6 +37,11 @@ namespace QuaternionCalculator
             var toolTip = new ToolTip();
             toolTip.SetToolTip(btnUp, "Move up");
             toolTip.SetToolTip(btnDown, "Move down");
+        }
+
+        private void InitializeUrl()
+        {
+            githubLabel.Text = GithubUrl;
         }
 
         private void OnTextChanged(object sender, EventArgs e)
@@ -175,7 +183,7 @@ namespace QuaternionCalculator
 
         private void OnGitLinkClick(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/Atropin/QuaternionCalculator");
+            System.Diagnostics.Process.Start(GithubUrl);
         }
 
         private void OnGitLinkMouseEnter(object sender, EventArgs e)
